@@ -1,0 +1,25 @@
+.main_container{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size:200px;
+}
+button{
+    height:200px;
+    width:1000px;
+    background-color:blue;
+    color:white;
+    font-size:50px;
+
+    &:hover{
+        cursor: pointer;
+        background-color:chartreuse;
+        transition:.5s;
+
+    }
+}
