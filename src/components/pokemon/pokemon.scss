@@ -1,0 +1,14 @@
+.mons{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mon {
+  grid-column: span 1;
+}
+
+#pokemon-button {
+  width: 100px;
+  margin: auto;
+  padding: 0;
+}
