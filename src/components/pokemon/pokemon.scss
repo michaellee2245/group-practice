@@ -1,14 +1,48 @@
 .mons{
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pool {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 200px;
+  border: solid blue;
+  margin: 0.1in;
+  padding: 0.1in;
+}
+
+.pool h2 {
+  grid-column: span 4;
+}
+
+.team {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0.1in;
+  padding: 0.1in;
+  margin-bottom: 1in;
+  min-height: 200px;
+  border: solid blue;
+}
+
+.team h2 {
+  grid-column: span 2;
 }
 
 .mon {
   grid-column: span 1;
 }
 
-#pokemon-button {
+.pokemon-button {
   width: 100px;
+  height: 2em;
   margin: auto;
   padding: 0;
+  font-size: 10px;
+  background: linear-gradient(chartreuse,springgreen);
+  border: none;
+  border-radius: 7.5px;
 }
